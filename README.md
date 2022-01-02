@@ -1,11 +1,17 @@
 # html-script-shelly---iobroker
 
-SPALTEN AUSSCHALTEN:
+**SPALTEN AUSSCHALTEN:**
 - auf false setzen
+
+
+
+
 
 ![Image 4](https://user-images.githubusercontent.com/18462890/147880162-338457de-179f-40d7-b47e-192a3748a1d9.png)
 
+**SCRIPT BEDIENUNG IM BROWSER:**
 
+https://github.com/liv-in-sky/sonoff-iobroker-script
 
 
 ![AApossis (164)](https://user-images.githubusercontent.com/18462890/147856973-42103972-51b6-478b-835e-b62837b6c03c.gif)
