@@ -406,7 +406,7 @@ let welcheView="";
       
         let helpShutter=false
                                                                             
- $("shelly."+ida[1]+"."+ida[2]+".*.Switch").each(function(ad, y) { log(ad+"----"+ida[1]+"---"+ida[2]); if ( !existsObject(`shelly.${ida[1]}.${ida[2]}.Shutter`)) {  dieSchalter.push(ad); helpSortierenSchalter=getSchatlerArt(ad) } 
+ $("shelly."+ida[1]+"."+ida[2]+".*.Switch").each(function(ad, y) {  if ( !existsObject(`shelly.${ida[1]}.${ida[2]}.Shutter`)) {  dieSchalter.push(ad); helpSortierenSchalter=getSchatlerArt(ad) } 
                                                                         else {  if ((getState(id.replace("id","Sys.deviceMode" )).val).includes("roller") && !helpShutter) { helpShutter=true;
                                                                              if (/*existsState(`shelly.${ida[1]}.${ida[2]}.Shutter.Open`)*/ true)  { dieSchalter.push(`shelly.${ida[1]}.${ida[2]}.Shutter.Open`); helpSortierenSchalter="shutter" }
                                                                               }  else { if (!helpShutter) {dieSchalter.push(ad); helpSortierenSchalter=getSchatlerArt(ad)  } }   }   });
